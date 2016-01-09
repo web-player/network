@@ -4,27 +4,26 @@
 		this file contains the head tag of html which is included in all pages. (front line only)
 	*/
 
-	// describes whic page is this
+	// describes which page is this
 	if (!isset($title)) 
 	{
-		$title="tile";
-	}
-
-	if (!isset($description)) 
-	{
-		$description="description";
+		$title="Home";
 	}
 
 	if (!isset($keywords)) 
 	{
-		$keywords="keywords";
+		$keywords="Freepdfs";
+	}
+
+	if (!isset($description)) 
+	{
+		$description="Collection of pdfs available on internet";
 	}
 
 ?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo "$title";?></title>
     
@@ -56,7 +55,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="material.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-text.css">
+    <link rel="stylesheet" href="styles-blog.css">
     <style>
     #view-source {
       position: fixed;
@@ -68,4 +68,4 @@
       z-index: 900;
     }
     </style>
- </head>
+</head>
